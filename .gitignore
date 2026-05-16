@@ -1,0 +1,22 @@
+# 不上传本地完整论文库
+01_Embodied_AI/
+02_Recommendation/
+03_Foundation_Model/
+04_Reinforcement_Learning/
+05_Literature_Review
+
+# 不上传原始论文 PDF
+*.pdf
+
+# 不上传本地原始图片、截图、缓存
+**/figures/raw/
+**/figures/pages/
+**/figures/extracted/
+*.pptx
+*.mp4
+*.avi
+*.mov
+
+# 但 docs 是公开网站内容，不能 ignore
+!docs/
+!docs/**
