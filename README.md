@@ -1,6 +1,6 @@
 # NashSAMA Research Notes
 
-This repository is a personal research-reading workspace and GitHub Pages site for AI papers, especially embodied AI, world models, VLA, reinforcement learning, recommendation, search, ads, and ranking.
+This repository is a personal research-reading workspace and GitHub Pages site for AI papers, especially embodied AI, world models, VLA, reinforcement learning, recommendation, search, ads, and ranking. The repository is continuously evolving, and the skill is actively being tested and refined.
 
 Public site:
 
