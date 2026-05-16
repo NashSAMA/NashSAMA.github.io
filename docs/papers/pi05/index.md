@@ -103,10 +103,11 @@ observation, q_t, high-level prompt
 
 ### 层级策略分解
 
-```text
-pi_theta(a_{t:t+H}, l_hat | o_t, l)
-= pi_theta(a_{t:t+H} | o_t, l_hat) * pi_theta(l_hat | o_t, l)
-```
+\[
+\pi_{\theta}(a_{t:t+H}, \hat{\ell} \mid o_t, \ell)
+= \pi_{\theta}(a_{t:t+H} \mid o_t, \hat{\ell})
+  \, \pi_{\theta}(\hat{\ell} \mid o_t, \ell)
+\]
 
 | 符号 | 含义 |
 |---|---|
@@ -119,14 +120,19 @@ pi_theta(a_{t:t+H}, l_hat | o_t, l)
 
 ### 连续动作 flow matching
 
-```text
-a_tau = tau * a + (1 - tau) * omega,  omega ~ N(0, I)
-```
+\[
+a_{\tau} = \tau a + (1 - \tau)\omega,
+\qquad
+\omega \sim \mathcal{N}(0, I)
+\]
 
-```text
-Loss = CE(text / bbox / FAST action tokens)
-     + alpha * || omega - a - f_action(a_tau, o_t, l) ||^2
-```
+\[
+\mathcal{L}
+= \operatorname{CE}(\text{text}, \text{bbox}, \text{FAST action tokens})
+  + \alpha \left\lVert
+      \omega - a - f_{\text{action}}(a_{\tau}, o_t, \ell)
+    \right\rVert_2^2
+\]
 
 | 项 | 作用 |
 |---|---|
