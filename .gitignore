@@ -20,3 +20,5 @@
 # 但 docs 是公开网站内容，不能 ignore
 !docs/
 !docs/**
+
+.codex/
