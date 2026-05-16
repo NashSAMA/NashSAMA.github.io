@@ -16,6 +16,7 @@
 *.mp4
 *.avi
 *.mov
+.vscode/
 
 # 但 docs 是公开网站内容，不能 ignore
 !docs/
