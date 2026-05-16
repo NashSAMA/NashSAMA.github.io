@@ -1,0 +1,10 @@
+title: NashSAMA
+description: Paper reading notes on embodied AI, world models, VLA, and learning systems.
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

@@ -1,6 +1,11 @@
+---
+title: LeWorldModel
+description: Reading note on Stable End-to-End Joint-Embedding Predictive Architecture from Pixels.
+---
+
 # LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels
 
-[Back to World Model Index](../../world-model.md)
+[Back to World Model Index]({{ '/world-model/' | relative_url }})
 
 ## Metadata
 
