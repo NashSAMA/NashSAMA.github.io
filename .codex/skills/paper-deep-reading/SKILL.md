@@ -548,7 +548,7 @@ description: Reading note on {Full Paper Title}.
 
 For the `Core Functions And Objectives` section:
 
-- write mathematical formulas as display LaTeX using `\[` and `\]`, not as plain `text` code blocks
+- write mathematical formulas as display LaTeX using `$$` delimiters, not as plain `text` code blocks
 - if the Jekyll layout does not already support math rendering, add MathJax or another reliable math renderer to the site layout
 - use fenced code blocks for pseudocode, data-flow traces, and implementation sketches only
 - include a `Symbol | Meaning` table for each important formula

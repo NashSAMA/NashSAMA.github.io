@@ -7,9 +7,13 @@ description: Notes on vision-language-action models and embodied policies.
 
 This section will collect notes on vision-language-action models, robotic foundation models, multimodal policy learning, and embodied instruction following.
 
+{% assign papers = site.pages | where: "paper", true | where: "area", "vla" | sort: "added" | reverse %}
+
 <ul class="note-list">
+  {% for paper in papers %}
   <li>
-    <a href="{{ '/papers/pi05/' | relative_url }}">π0.5: a Vision-Language-Action Model with Open-World Generalization</a>
-    <div class="meta">Physical Intelligence / VLA / 开放世界移动操作，2025</div>
+    <a href="{{ paper.url | relative_url }}">{{ paper.full_title | default: paper.title }}</a>
+    <div class="meta">{{ paper.area_label }}，{{ paper.year }}</div>
   </li>
+  {% endfor %}
 </ul>

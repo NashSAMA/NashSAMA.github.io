@@ -7,6 +7,10 @@ description: Notes on latent world models, predictive learning, and planning.
 
 Notes on models that learn compact predictive representations of environment dynamics and use them for planning or control.
 
+{% assign papers = site.pages | where: "paper", true | where: "area", "world-model" | sort: "added" | reverse %}
+
 | Paper | Year | Area | Key Idea |
 |---|---:|---|---|
-| [LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels]({{ '/papers/leworldmodel-stable-end-to-end-jepa-from-pixels/' | relative_url }}) | 2026 | JEPA / Latent Planning | End-to-end pixel JEPA world model with SIGReg anti-collapse and CEM/MPC latent planning |
+{% for paper in papers %}
+| [{{ paper.full_title | default: paper.title }}]({{ paper.url | relative_url }}) | {{ paper.year }} | {{ paper.area_label }} | {{ paper.summary }} |
+{% endfor %}

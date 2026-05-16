@@ -1,6 +1,14 @@
 ---
 title: π0.5
 description: π0.5 论文精读：面向开放世界泛化的 Vision-Language-Action 模型。
+paper: true
+short_title: π0.5
+full_title: "π0.5: a Vision-Language-Action Model with Open-World Generalization"
+area: vla
+area_label: Physical Intelligence / VLA / 开放世界移动操作
+year: 2025
+added: 2026-05-16
+summary: VLA co-training recipe for open-world mobile manipulation across homes, robots, web semantics, and high-level task supervision.
 ---
 
 # π0.5：面向开放世界泛化的 Vision-Language-Action 模型
@@ -103,11 +111,11 @@ observation, q_t, high-level prompt
 
 ### 层级策略分解
 
-\[
+$$
 \pi_{\theta}(a_{t:t+H}, \hat{\ell} \mid o_t, \ell)
 = \pi_{\theta}(a_{t:t+H} \mid o_t, \hat{\ell})
   \, \pi_{\theta}(\hat{\ell} \mid o_t, \ell)
-\]
+$$
 
 | 符号 | 含义 |
 |---|---|
@@ -120,19 +128,19 @@ observation, q_t, high-level prompt
 
 ### 连续动作 flow matching
 
-\[
+$$
 a_{\tau} = \tau a + (1 - \tau)\omega,
 \qquad
 \omega \sim \mathcal{N}(0, I)
-\]
+$$
 
-\[
+$$
 \mathcal{L}
 = \operatorname{CE}(\text{text}, \text{bbox}, \text{FAST action tokens})
   + \alpha \left\lVert
       \omega - a - f_{\text{action}}(a_{\tau}, o_t, \ell)
     \right\rVert_2^2
-\]
+$$
 
 | 项 | 作用 |
 |---|---|
