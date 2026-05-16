@@ -2,7 +2,7 @@
 
 Personal research-reading workspace and GitHub Pages site for AI papers, especially embodied AI, world models, VLA, reinforcement learning, recommendation, search, ads, and ranking. The repository is continuously evolving, and the skill is actively being tested and refined.
 
-Site: `https://NashSAMA.github.io`
+Site: [https://NashSAMA.github.io](https://NashSAMA.github.io)
 
 ## What This Repo Is
 
