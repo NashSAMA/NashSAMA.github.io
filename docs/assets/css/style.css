@@ -271,6 +271,12 @@ pre code {
   color: inherit;
 }
 
+mjx-container[jax="SVG"][display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 0;
+}
+
 blockquote {
   margin: 24px 0;
   padding: 4px 0 4px 20px;
