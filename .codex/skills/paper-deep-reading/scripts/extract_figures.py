@@ -13,8 +13,11 @@ from typing import Iterable
 
 try:
     import fitz
-except ImportError as exc:
-    raise SystemExit("PyMuPDF is required. Install it with: pip install pymupdf") from exc
+except Exception:
+    try:
+        import pymupdf as fitz
+    except ImportError as exc:
+        raise SystemExit("PyMuPDF is required. Install it with: pip install pymupdf") from exc
 
 
 def parse_pages(spec: str | None, page_count: int) -> list[int]:
